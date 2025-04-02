@@ -9,7 +9,9 @@ T = 300.0  # Température (K)
 # Titre de l'application
 st.title("Calcul des paramètres du modèle équivalent d'une cellule solaire")
 # Affichage d'une image explicative
-st.image("figure_ok.png", caption="Caractéristiques I-V d'une cellule solaire", use_column_width=True)
+st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_container_width=True)
+
+
 
 # Entrée des paramètres par l'utilisateur
 Isc = st.number_input("Courant de court-circuit (Isc) [A]", min_value=0.0)
