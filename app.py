@@ -35,21 +35,21 @@ st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire",
 
 
 # Entrée des paramètres par l'utilisateur
-Isc = st.number_input("Courant de court-circuit (Isc) [A]", format="%.6f)
-Voc = st.number_input("Tension à vide (Voc) [V]", format="%.6f)
-Vm = st.number_input("Tension au point de puissance max (Vm) [V]", format="%.6f)
-Im = st.number_input("Courant au point de puissance max (Im) [A]", format="%.6f)
+Isc = st.number_input("Courant de court-circuit (Isc) [A]", format="%.6f")
+Voc = st.number_input("Tension à vide (Voc) [V]", format="%.6f")
+Vm = st.number_input("Tension au point de puissance max (Vm) [V]", format="%.6f")
+Im = st.number_input("Courant au point de puissance max (Im) [A]", format="%.6f")
 
 
-V1_Rs0 = st.number_input("V1 pour Rs [V]", format="%.6f)
-I1_Rs0 = st.number_input("I1 pour Rs [A]", format="%.6f)
-V2_Rs0 = st.number_input("V2 pour Rs [V]", format="%.6f)
-I2_Rs0 = st.number_input("I2 pour Rs [A]", format="%.6f)
+V1_Rs0 = st.number_input("V1 pour Rs [V]", format="%.6f")
+I1_Rs0 = st.number_input("I1 pour Rs [A]", format="%.6f")
+V2_Rs0 = st.number_input("V2 pour Rs [V]", format="%.6f")
+I2_Rs0 = st.number_input("I2 pour Rs [A]", format="%.6f")
 
-V1_Rsh0 = st.number_input("V1 pour Rsh [V]", format="%.6f)
-I1_Rsh0 = st.number_input("I1 pour Rsh [A]", format="%.6f)
-V2_Rsh0 = st.number_input("V2 pour Rsh [V]", format="%.6f)
-I2_Rsh0 = st.number_input("I2 pour Rsh [A]", format="%.6f)
+V1_Rsh0 = st.number_input("V1 pour Rsh [V]", format="%.6f")
+I1_Rsh0 = st.number_input("I1 pour Rsh [A]", format="%.6f")
+V2_Rsh0 = st.number_input("V2 pour Rsh [V]", format="%.6f")
+I2_Rsh0 = st.number_input("I2 pour Rsh [A]", format="%.6f")
 
 # Bouton pour exécuter le calcul
 if st.button("Calculer"):
