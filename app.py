@@ -30,12 +30,42 @@ Cette méthode est souvent utilisée en recherche pour caractériser les cellule
 st.write("### Réalisé par : **Dr. Ahmed Kotbi**")
 st.write("### Post-doc à l'Université de Picardie Jules verne")
 # Ajout de la section "À propos de l'auteur"
+with st.expander("📖 **Biographie détaillée**"):
+    st.markdown("""
+    ### **Dr. Ahmed Kotbi**
+    **Chercheur spécialisé** en matériaux semi-conducteurs et capteurs de gaz.
+
+    ### **🎓 Formation et Expérience**
+    - Expert en **PECVD, CVD, PVD, Sol-Gel (Spin Coating, Dip Coating, Spray Pyrolysis)**.
+    - Collaborations : **MAScIR (Maroc), Université de Technologie de Compiègne (France)**.
+    - Développement de **capteurs de gaz HF** et **filtres optiques pour applications biologiques**.
+
+    ### **🔬 Contributions Scientifiques**
+    - **Brevet sur la fabrication du Graphène** par PECVD.
+    - **Optimisation de la croissance du Graphène** via la **méthode Taguchi**.
+    - Encadrement de **doctorants et étudiants** en **énergétique et optoélectronique**.
+
+    ### **📞 Contact**
+    📧 Email : [votre.email@exemple.com](mailto:votre.email@exemple.com)  
+    🔗 LinkedIn : [linkedin.com/in/votreprofil](https://linkedin.com/in/votreprofil)  
+    """)
+
 st.sidebar.header("À propos de l'auteur")
 st.sidebar.info(
     """👨‍🔬 **Dr. Ahmed Kotbi**  
 Chercheur en matériaux semi-conducteurs et capteurs de gaz, spécialisé dans les **méthodes PECVD et CVD**.  
 Expérience en transfert technologique et encadrement académique.  
 Auteur de plusieurs travaux sur le **graphène et les cellules solaires**."""
+)
+
+# Ajout de la section "📬 Contact"
+st.sidebar.header("📬 Contact")
+st.sidebar.info(
+    """
+    📧 **Email :** [kotbi.ahmed7@gmail.com](mailto:kotbi.ahmed7@gmail.com)  
+    🔗 **LinkedIn :** [linkedin.com/in/ahmedkotbi](https://www.linkedin.com/in/ahmed-kotbi-1398bab9/)  
+    🏫 **Institution :** Université de Picardie Jules Verne / Centre de recherche: Laboratoire de physique de la matière condensée / Amiens / France  
+    """
 )
 
 st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_container_width=True)
