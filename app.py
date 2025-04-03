@@ -29,6 +29,14 @@ Cette méthode est souvent utilisée en recherche pour caractériser les cellule
 
 st.write("### Réalisé par : **Dr. Ahmed Kotbi**")
 st.write("### Post-doc à l'Université de Picardie Jules verne")
+# Ajout de la section "À propos de l'auteur"
+st.sidebar.header("À propos de l'auteur")
+st.sidebar.info(
+    """👨‍🔬 **Dr. Ahmed Kotbi**  
+Chercheur en matériaux semi-conducteurs et capteurs de gaz, spécialisé dans les **méthodes PECVD et CVD**.  
+Expérience en transfert technologique et encadrement académique.  
+Auteur de plusieurs travaux sur le **graphène et les cellules solaires**."""
+)
 
 st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_container_width=True)
 
