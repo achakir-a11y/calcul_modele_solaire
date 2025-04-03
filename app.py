@@ -30,25 +30,28 @@ Cette méthode est souvent utilisée en recherche pour caractériser les cellule
 st.write("### Réalisé par : **Dr. Ahmed Kotbi**")
 st.write("### Post-doc à l'Université de Picardie Jules verne")
 # Ajout de la section "À propos de l'auteur"
-with st.expander("📖 **Biographie détaillée**"):
-    st.markdown("""
-    ### **Dr. Ahmed Kotbi**
-    **Chercheur spécialisé** en matériaux semi-conducteurs et capteurs de gaz.
 
-    ### **🎓 Formation et Expérience**
-    - Expert en **PECVD, CVD, PVD, Sol-Gel (Spin Coating, Dip Coating, Spray Pyrolysis)**.
-    - Collaborations : **MAScIR (Maroc), Université de Technologie de Compiègne (France)**.
-    - Développement de **capteurs de gaz HF** et **filtres optiques pour applications biologiques**.
+st.sidebar.title("📖 Biographie")
 
-    ### **🔬 Contributions Scientifiques**
-    - **Brevet sur la fabrication du Graphène** par PECVD.
-    - **Optimisation de la croissance du Graphène** via la **méthode Taguchi**.
-    - Encadrement de **doctorants et étudiants** en **énergétique et optoélectronique**.
+st.sidebar.info("""
+### **Dr. Ahmed Kotbi**
+**Chercheur spécialisé** en matériaux semi-conducteurs et capteurs de gaz.
 
-    ### **📞 Contact**
-    📧 Email : [votre.email@exemple.com](mailto:votre.email@exemple.com)  
-    🔗 LinkedIn : [linkedin.com/in/votreprofil](https://linkedin.com/in/votreprofil)  
-    """)
+### **🎓 Formation et Expérience**
+- Expert en **PECVD, CVD, PVD, Sol-Gel (Spin Coating, Dip Coating, Spray Pyrolysis)**.
+- Collaborations : **MAScIR (Maroc), Université de Technologie de Compiègne (France)**.
+- Développement de **capteurs de gaz HF** et **filtres optiques pour applications biologiques**.
+
+### **🔬 Contributions Scientifiques**
+- **Brevet sur la fabrication du Graphène** par PECVD.
+- **Optimisation de la croissance du Graphène** via la **méthode Taguchi**.
+- Encadrement de **doctorants et étudiants** en **énergétique et optoélectronique**.
+
+### **📞 Contact**
+📧 Email : [votre.email@exemple.com](mailto:votre.email@exemple.com)  
+🔗 LinkedIn : [linkedin.com/in/votreprofil](https://linkedin.com/in/votreprofil)  
+""")
+
 
 st.sidebar.header("À propos de l'auteur")
 st.sidebar.info(
