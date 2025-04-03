@@ -48,8 +48,8 @@ st.sidebar.info("""
 - Encadrement de **doctorants et étudiants** en **énergétique et optoélectronique**.
 
 ### **📞 Contact**
-📧 Email : [votre.email@exemple.com](mailto:votre.email@exemple.com)  
-🔗 LinkedIn : [linkedin.com/in/votreprofil](https://linkedin.com/in/votreprofil)  
+📧 Email : [ahmed.kotbi@u-picardie.fr](mailto:ahmed.kotbi@u-picardie.fr)  
+🔗 LinkedIn : [linkedin.com/in/votreprofil](https://www.linkedin.com/in/ahmed-kotbi-1398bab9/)  
 """)
 
 
