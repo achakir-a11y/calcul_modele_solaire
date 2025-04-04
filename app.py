@@ -1,5 +1,60 @@
 import streamlit as st
 import numpy as np
+from fpdf import FPDF
+
+# Configuration de la page
+st.set_page_config(page_title="Modèle Solaire", page_icon="☀️", layout="wide")
+
+# Barre latérale
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Aller à :", ["Accueil", "Méthode à 5 points", "Bibliographie", "Contact"])
+
+
+# Fonction pour générer un PDF
+def generate_pdf():
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+    pdf.cell(200, 10, "Rapport du Modèle Solaire", ln=True, align='C')
+    pdf.ln(10)
+    pdf.cell(200, 10, "Résultats calculés ici...", ln=True)
+    pdf.output("rapport_modele_solaire.pdf")
+    return "rapport_modele_solaire.pdf"
+
+
+# Affichage du contenu selon la page sélectionnée
+if page == "Accueil":
+    st.title("Modèle Solaire - Simulation et Calculs")
+    st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_container_width=True)
+
+    # Ajout d'un bouton de téléchargement
+    if st.button("Télécharger le rapport en PDF"):
+        pdf_file = generate_pdf()
+        with open(pdf_file, "rb") as f:
+            st.download_button("Télécharger", f, file_name="rapport_modele_solaire.pdf")
+
+elif page == "Méthode à 5 points":
+    st.title("Méthode à 5 Points")
+    st.write("""
+    La méthode à 5 points est une technique utilisée pour...
+    (Explication détaillée ici)
+    """)
+
+elif page == "Bibliographie":
+    st.title("Bibliographie de Dr. Ahmed Kotbi")
+    st.write("""
+    Dr. Ahmed Kotbi est un chercheur expérimenté dans le domaine des capteurs de gaz,
+    des matériaux semi-conducteurs bidimensionnels et de la fabrication du graphène.
+    Il a mené plusieurs projets en collaboration avec des institutions académiques en France et au Maroc...
+    """)
+
+elif page == "Contact":
+    st.title("Contact")
+    st.write("""
+    **Email** : ahmed.kotbi@example.com  
+    **LinkedIn** : [linkedin.com/in/ahmedkotbi](https://www.linkedin.com/in/ahmedkotbi)  
+    **Téléphone** : +212 6 XX XX XX XX  
+    """)
 
 # Constantes physiques
 k = 1.380649e-23  # Constante de Boltzmann (J/K)
