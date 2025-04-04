@@ -52,7 +52,6 @@ elif page == "Contact":
     st.write("""
     **Email** : ahmed.kotbi@example.com  
     **LinkedIn** : [linkedin.com/in/ahmedkotbi](https://www.linkedin.com/in/ahmedkotbi)  
-    **Téléphone** : +212 6 XX XX XX XX  
     """)
 
 # Constantes physiques
@@ -61,14 +60,13 @@ q = 1.602176634e-19  # Charge de l'électron (C)
 T = 300.0  # Température (K)
 
 # Titre de l'application
-st.title("Calcul des paramètres d'une cellule solaire - Modèle à 5 points")
+st.title("Calcul des paramètres du modèle équivalent d'une cellule solaire - Modèle à 5 points")
 st.markdown("""
 Ce site permet de calculer les paramètres du modèle électrique équivalent d’une cellule solaire 
 en utilisant la méthode à cinq points. Il est destiné aux chercheurs, ingénieurs et étudiants 
 travaillant dans le domaine du photovoltaïque.
 """)
 
-st.title("Calcul des paramètres du modèle équivalent d'une cellule solaire")
 # Affichage d'une image explicative
 st.write("""
 ## Méthode des 5 points pour le calcul des paramètres du modèle électrique équivalent d'une cellule solaire
