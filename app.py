@@ -25,8 +25,7 @@ def generate_pdf():
 # Affichage du contenu selon la page sélectionnée
 if page == "Accueil":
     st.title("Modèle Solaire - Simulation et Calculs")
-    st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_container_width=True)
-
+    st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_column_width=True)
     # Ajout d'un bouton de téléchargement
     if st.button("Télécharger le rapport en PDF"):
         pdf_file = generate_pdf()
@@ -127,7 +126,8 @@ st.sidebar.info(
     """
 )
 
-st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_container_width=True)
+
+st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire", use_column_width=True)
 
 
 
