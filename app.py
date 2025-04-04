@@ -7,6 +7,13 @@ q = 1.602176634e-19  # Charge de l'électron (C)
 T = 300.0  # Température (K)
 
 # Titre de l'application
+st.title("Calcul des paramètres d'une cellule solaire - Modèle à 5 points")
+st.markdown("""
+Ce site permet de calculer les paramètres du modèle électrique équivalent d’une cellule solaire 
+en utilisant la méthode à cinq points. Il est destiné aux chercheurs, ingénieurs et étudiants 
+travaillant dans le domaine du photovoltaïque.
+""")
+
 st.title("Calcul des paramètres du modèle équivalent d'une cellule solaire")
 # Affichage d'une image explicative
 st.write("""
@@ -53,13 +60,7 @@ st.sidebar.info("""
 """)
 
 
-st.sidebar.header("À propos de l'auteur")
-st.sidebar.info(
-    """👨‍🔬 **Dr. Ahmed Kotbi**  
-Chercheur en matériaux semi-conducteurs et capteurs de gaz, spécialisé dans les **méthodes PECVD et CVD**.  
-Expérience en transfert technologique et encadrement académique.  
-Auteur de plusieurs travaux sur le **graphène et les cellules solaires**."""
-)
+
 
 # Ajout de la section "📬 Contact"
 st.sidebar.header("📬 Contact")
@@ -113,5 +114,9 @@ if st.button("Calculer"):
     st.write(f"**Résistance série (Rs) :** {Rs:.4f} Ω")
     st.write(f"**Résistance shunt (Rsh) :** {Rsh:.4f} Ω")
 
+# Pied de page
+st.markdown("""---  
+© 2025 Ahmed Kotbi – Tous droits réservés.
+""")
 
 
