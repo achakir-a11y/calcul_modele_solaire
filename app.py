@@ -131,6 +131,7 @@ st.image("figure_ok.PNG", caption="Caractéristiques I-V d'une cellule solaire",
 
 
 
+
 # Entrée des paramètres par l'utilisateur
 Isc = st.number_input("Courant de court-circuit (Isc) [A]", format="%.6f")
 Voc = st.number_input("Tension à vide (Voc) [V]", format="%.6f")
